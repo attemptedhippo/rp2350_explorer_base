@@ -22,11 +22,19 @@ int main()
 {
 	stdio_init_all();
 	
+	uint32_t cd_timer = 0;
 	G_Ball ball = {Point{320/2, 240/2}, 5};
 	Point  ball_vel = {10, 10};
 
 	while(true)
 	{
+		if(cd_timer >= 1000)
+		{
+			puts("Hello explorer!");
+			cd_timer = 0;
+		}
+		cd_timer += 33; // This used to be included with sleep(33) (30 fps)
+
 		//Update your logic below:
 		if((ball.center.x - ball.rad + ball_vel.x  <= 0) or (ball.center.x + ball.rad + ball_vel.x >= 320))
 		{
