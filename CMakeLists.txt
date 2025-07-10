@@ -21,7 +21,9 @@ project(${NAME} C CXX ASM)
 
 pico_sdk_init()
 
-add_executable(${NAME} main.cpp)
+file(GLOB_RECURSE source_files "src/*.cpp")
+
+add_executable(${NAME} ${source_files})
 
 include(common/pimoroni_i2c)
 include(common/pimoroni_bus)
