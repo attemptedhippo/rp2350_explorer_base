@@ -1,5 +1,4 @@
-Hey! This repo is provided as is, I offer no warranty or any of that other stuff.
-I'm a very beginner hobbiest coder and I barely have any clue what I'm doing. Good Luck!
+I'm a beginner programmer, this is probably not the best code.
 
 ---
 
